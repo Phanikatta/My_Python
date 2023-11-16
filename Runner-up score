@@ -1,0 +1,10 @@
+#Runner-up score
+n=int(input())
+l=list(map(int,input().split()))
+maxx=max(l)
+l.sort()
+for i in range(n):
+    if(l[i]==maxx):
+        m=l[i-1]
+        break
+print(m)
